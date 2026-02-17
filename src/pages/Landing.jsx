@@ -190,14 +190,7 @@ bg-white">
             </button>
 
             {/* MOBILE MENU BUTTON */}
-            <button
-              className="menu-btn"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
 
-
-              ≣
-            </button>
 
             {!user && (
               <Link to="/signup" className="primary-btn desktop-only">
