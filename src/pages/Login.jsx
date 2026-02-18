@@ -25,7 +25,7 @@ export default function Login() {
       <div className="absolute inset-0 -z-10 overflow-hidden">
 
         {/* Base Gradient */}
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-orange-900 via-amber-700 to-yellow-500" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-slate-800 via-slate-600 to-slate-400" />
 
         {/* Soft Light Overlay */}
         <div className="absolute inset-0 bg-white/10 backdrop-blur-[2px]" />
