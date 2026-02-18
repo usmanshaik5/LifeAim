@@ -83,199 +83,12 @@ export default function Dashboard() {
       </div>
 
       {/* ================= DESKTOP ================= */}
-      <div className="hidden md:block p-8 space-y-8">
 
-        {/* WALLET */}
-        <div className="rounded-3xl p-8 bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-2xl">
-          <p className="text-sm opacity-80">Wallet Balance</p>
-          <h2 className="text-4xl font-bold mt-2">₹ 11,318.22</h2>
-        </div>
-
-        {/* REFERRALS */}
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-slate-900 text-white rounded-2xl p-6">
-            <h3 className="text-cyan-400 font-semibold mb-4">
-              REFERRAL – LEFT
-            </h3>
-            <p className="text-sm break-all">
-              https://worldlifecareMultitrade.com/register.aspx?Sponsor=LA100001&Side=Left
-            </p>
-          </div>
-
-          <div className="bg-slate-900 text-white rounded-2xl p-6">
-            <h3 className="text-purple-400 font-semibold mb-4">
-              REFERRAL – RIGHT
-            </h3>
-            <p className="text-sm break-all">
-              https://worldlifecareMultitrade.com/register.aspx?Sponsor=LA100001&Side=Right
-            </p>
-          </div>
-        </div>
-
-        {/* QUICK STATS */}
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            ["Total Earnings", "₹ 14,767.98"],
-            ["Self Business", "₹ 26,993.78"],
-            ["Total Business", "70,324"],
-          ].map((item, i) => (
-            <div key={i} className="border rounded-xl p-6 shadow-sm">
-              <p className="text-sm text-gray-500">{item[0]}</p>
-              <h3 className="text-xl font-bold mt-1">{item[1]}</h3>
-            </div>
-          ))}
-        </div>
-        <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-6 text-white">
-          <h2 className="text-lg font-semibold mb-6">ACCOUNT SUMMARY</h2>
-
-          <div className="space-y-4">
-            <div className="bg-indigo-600 rounded-xl p-5">
-              <p>Wallet Balance</p>
-              <h3 className="text-2xl font-bold">₹ 11318.22</h3>
-            </div>
-
-            <div className="bg-blue-600 rounded-xl p-5">
-              <p>Self Business</p>
-              <h3 className="text-2xl font-bold">₹ 26993.78</h3>
-            </div>
-
-            <div className="bg-green-600 rounded-xl p-5">
-              <p>Total Earning</p>
-              <h3 className="text-2xl font-bold">₹ 14767.98</h3>
-            </div>
-          </div>
-        </div>
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-purple-900 text-white rounded-2xl p-6">
-            <h3 className="mb-4 font-semibold">Royalty Status</h3>
-            <div className="bg-purple-500 text-black px-4 py-2 rounded-full inline-block font-semibold">
-              FAST-START-ROYALTY
-            </div>
-          </div>
-
-          <div className="bg-green-900 text-white rounded-2xl p-6">
-            <h3 className="mb-4 font-semibold">KYC Status</h3>
-            <div className="bg-green-500 text-black px-4 py-2 rounded-full inline-block font-semibold">
-              APPROVED
-            </div>
-          </div>
-        </div>
-        <div className="bg-slate-900 text-white rounded-2xl p-6">
-          <h2 className="text-lg font-semibold mb-6">TEAM MATRIX</h2>
-
-          <div className="space-y-3 text-sm">
-            {[
-              ["Total Team", "22", "15"],
-              ["Active Team", "0", "0"],
-              ["Inactive Team", "22", "15"],
-              ["Total Direct", "17", "8"],
-              ["Active Direct", "3", "1"],
-              ["Inactive Direct", "14", "7"],
-            ].map((row, i) => (
-              <div key={i} className="grid grid-cols-3 border-b border-slate-700 py-2">
-                <span>{row[0]}</span>
-                <span className="text-center">{row[1]}</span>
-                <span className="text-center">{row[2]}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="bg-slate-900 text-white rounded-2xl p-6">
-          <h2 className="text-lg font-semibold mb-6">BUSINESS</h2>
-
-          <div className="text-center mb-6">
-            <h3 className="text-4xl font-bold">70324</h3>
-            <p className="text-gray-400">TOTAL BUSINESS</p>
-          </div>
-
-          <div className="space-y-4">
-            <div>
-              <div className="flex justify-between">
-                <span>Left Side</span>
-                <span>36129</span>
-              </div>
-              <div className="h-2 bg-slate-700 rounded-full mt-2">
-                <div className="h-2 bg-cyan-500 rounded-full w-3/4"></div>
-              </div>
-            </div>
-
-            <div>
-              <div className="flex justify-between">
-                <span>Right Side</span>
-                <span>34195</span>
-              </div>
-              <div className="h-2 bg-slate-700 rounded-full mt-2">
-                <div className="h-2 bg-purple-500 rounded-full w-2/3"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="bg-slate-900 text-white rounded-2xl p-6">
-          <h2 className="text-lg font-semibold mb-6">WITHDRAW OVERVIEW</h2>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-cyan-900 rounded-xl p-5 text-center">
-              <p>Direct Business</p>
-              <h3 className="text-2xl font-bold">₹ 53352.28</h3>
-            </div>
-
-            <div className="bg-green-900 rounded-xl p-5 text-center">
-              <p>Success Withdraw</p>
-              <h3 className="text-2xl font-bold">₹ 0</h3>
-            </div>
-
-            <div className="bg-yellow-900 rounded-xl p-5 text-center">
-              <p>Pending Withdraw</p>
-              <h3 className="text-2xl font-bold">₹ 0</h3>
-            </div>
-          </div>
-        </div>
-
-        {/* SECTIONS */}
-        <Section id="profile" title="Profile Details">
-          {[
-            ["Date Joined", "27 Jan 2026"],
-            ["Account Status", "ACTIVE"],
-            ["Reward", "PRESIDENT"],
-            ["Mobile", "9876543210"],
-            ["Email", "demo@gmail.com"],
-          ].map((row, i) => (
-            <div key={i} className="flex justify-between py-2">
-              <span>{row[0]}</span>
-              <span className="font-semibold">{row[1]}</span>
-            </div>
-          ))}
-        </Section>
-
-        <Section id="income" title="Income Overview">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {[
-              ["Matching Income", "₹ 579.60", "from-indigo-500 to-purple-500"],
-              ["Sponsor Matching", "₹ 363.60", "from-pink-500 to-rose-500"],
-              ["Royalty Income", "₹ 3912.39", "from-emerald-500 to-teal-500"],
-              ["FAST-START", "₹ 1296.00", "from-orange-500 to-amber-500"],
-              ["PRESIDENT", "₹ 1304.13", "from-cyan-500 to-blue-500"],
-              ["Rank Reward", "₹ 6000.00", "from-violet-600 to-indigo-600"],
-            ].map((row, i) => (
-              <div
-                key={i}
-                className={`p-4 rounded-2xl text-white shadow-lg 
-        bg-gradient-to-r ${row[2]} 
-        transform transition-all duration-300 
-        hover:scale-105 hover:shadow-2xl`}
-              >
-                <div className="text-sm opacity-90">{row[0]}</div>
-                <div className="text-xl font-bold mt-1">{row[1]}</div>
-              </div>
-            ))}
-          </div>
-        </Section>
-
-      </div>
 
       {/* ================= MOBILE ================= */}
       {/* ================= MOBILE ================= */}
-      <div className="md:hidden p-6 space-y-6">
+      <div className="p-6 space-y-6 max-w-md mx-auto">
+
 
         {/* HOME TAB */}
         {mobileTab === "home" && (
@@ -504,7 +317,8 @@ export default function Dashboard() {
 
       {/* MOBILE NAV */}
       {/* MOBILE NAV */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg">
+
         <div className="flex justify-around items-center py-2">
 
           {[
